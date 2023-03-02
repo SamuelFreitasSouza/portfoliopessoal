@@ -1,0 +1,204 @@
+@import '../abstract/variaveis';
+
+body{
+    background-image: url('../assets/fundo.jpg');
+    width: 100%;
+    height: 100%;
+}
+
+.cabecalho{
+    .cabecalho-nav{
+        .container{
+            display: flex;
+            justify-content: space-between;
+            padding:1rem;
+            background-color: $cor-primaria;
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+            
+            .img{
+                max-width: 40px;
+            }
+            .container-portfolio{
+                display: flex;
+            }
+            h3{
+                display:flex;
+                justify-content: center;
+                align-items: center;
+                color:white;
+                font-family: $fonte;
+            }
+            .cabecalho-link{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                gap: 20px;
+                list-style: none; 
+                .cabecalho-lista{
+                    text-decoration: none;
+                    font-family: $fonte;
+                    color: aliceblue;
+                    &:hover{
+                        border-bottom: 1.5px solid $cor-terciaria;
+                    }
+                }
+            }
+        }
+        
+    }
+}
+
+.main{
+    display: flex;
+    width: 100%;
+    opacity: 0.9;
+    background-color: $cor-secundaria;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+    .main-img{
+        display: flex;
+        padding:1rem;
+        .main-foto{
+            
+            max-width: 400px;
+            height: 300px;
+            border-radius: 50%;
+            margin: 30px 0px 10px;
+            padding: 1rem;
+            border: 10px solid white;
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        }
+    }
+}
+
+.main-textos{
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 3rem 1rem 8rem 5rem;
+    color:white;
+    font-family:$fonte;
+    h2{
+        font-weight: 400;
+        font-size: 20px;
+        color:$cor-terciaria;
+    }
+}
+
+.main-tecnologia{
+    display:flex;
+    flex-direction: column;
+  
+    h3{
+        border-bottom: 1px solid;
+        padding: 1rem 0 0 0 ;
+    }
+    .imagens{
+        display:flex;
+        gap: 10px;
+    }
+    img{
+        display: flex;
+        flex-direction: row;
+        max-width: 4rem;
+        padding: 1rem 0 0 0 ;
+    }
+    .botoes{
+        display: flex;
+        align-items: center;
+        padding: 2rem 0 0 0;
+        a{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 10px 10px 0 10px;
+        }
+       
+        .button-85 {
+            padding: 0.6em 2em;
+            border: none;
+            outline: none;
+            color: rgb(255, 255, 255);
+            background:$cor-primaria;
+            cursor: pointer;
+            position: relative;
+            z-index: 0;
+            border-radius: 10px;
+            user-select: none;
+            -webkit-user-select: none;
+            touch-action: manipulation;
+            text-decoration: none;
+            font-weight:bold;
+          }
+          
+          .button-85:before {
+            content: "";
+            background: linear-gradient(
+              45deg,
+              #ff0000,
+              #ff7300,
+              #fffb00,
+              #48ff00,
+              #00ffd5,
+              #002bff,
+              #7a00ff,
+              #ff00c8,
+              #ff0000
+            );
+            position: absolute;
+            top: -2px;
+            left: -2px;
+            background-size: 400%;
+            z-index: -1;
+            filter: blur(5px);
+            -webkit-filter: blur(5px);
+            width: calc(100% + 4px);
+            height: calc(100% + 4px);
+            animation: glowing-button-85 20s linear infinite;
+            transition: opacity 0.3s ease-in-out;
+            border-radius: 10px;
+          }
+          
+          @keyframes glowing-button-85 {
+            0% {
+              background-position: 0 0;
+            }
+            50% {
+              background-position: 400% 0;
+            }
+            100% {
+              background-position: 0 0;
+            }
+          }
+          
+          .button-85:after {
+            z-index: -1;
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background: $cor-primaria;
+            left: 0;
+            top: 0;
+            border-radius: 10px;
+          }
+    
+    }
+}
+
+.footer-div{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding:1rem;
+            background-color: $cor-primaria;
+            font-family: $fonte;
+            color: white;
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+
+
+    
